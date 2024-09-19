@@ -26,7 +26,13 @@ public class MainActivity extends AppCompatActivity {
                 int resultado = edadint * 7;
                 String resultadostring = "La edad del michi es: " + resultado + "años";
                 resulttext.setText(resultadostring);
+                if (!edad.isEmpty()) {
+                    int edadint = Integer.parseInt(edad);
+                    int resultado = edadint * 7;
+                    String resultadostring = "La edad del michi es: " + resultado + "años";
+                    resulttext.setText(resultadostring);
+                }
             }
-        });
+            });
     }
 }
