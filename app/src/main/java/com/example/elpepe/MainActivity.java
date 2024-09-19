@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,7 +32,9 @@ public class MainActivity extends AppCompatActivity {
                     int resultado = edadint * 7;
                     String resultadostring = "La edad del michi es: " + resultado + "años";
                     resulttext.setText(resultadostring);
+
                 }
+                Toast.makeText(MainActivity.this, "Agrega una michi edad", Toast.LENGTH_LONG).show();
             }
             });
     }
